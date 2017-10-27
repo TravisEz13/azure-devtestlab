@@ -38,6 +38,6 @@
         }
     },
     "runCommand": {
-        "commandToExecute": "[concat('sh full-rh-vstsbuild-install.sh', parameters('url'), ' ', parameters('vstsPat'), ' ', parameters('pool'), ' ', parameters('agentname'), ' ', parameters('username'))]"
+        "commandToExecute": "[concat('sh full-rh-vstsbuild-install.sh', ' ', parameters('url'), ' ', parameters('vstsPat'), ' ', parameters('pool'), ' ', parameters('agentname'), ' ', parameters('username'))]"
     }
 }
