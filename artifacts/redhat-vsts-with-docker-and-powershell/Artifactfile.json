@@ -13,8 +13,7 @@
         "url": {
             "type": "string",
             "displayName": "VSTS Connection Url",
-            "description": "The VSTS url to connect to VSTS.  Example: 'https://<account>.visualstudio.com'",
-            "defaultValue": "https://tbd.visualstudio.com"
+            "description": "The VSTS url to connect to VSTS.  Example: 'https://<account>.visualstudio.com'"
         },
         "vstsPat": {
             "type": "securestring",
@@ -39,6 +38,6 @@
         }
     },
     "runCommand": {
-        "commandToExecute": "[concat('sh full-rh-vstsbuild-install.sh ', parameters('url'), parameters('vstsPat'), ' ', parameters('pool'), ' ', parameters('agentname'), ' ', parameters('username'))]"
+        "commandToExecute": "[concat('sh full-rh-vstsbuild-install.sh', parameters('url'), ' ', parameters('vstsPat'), ' ', parameters('pool'), ' ', parameters('agentname'), ' ', parameters('username'))]"
     }
 }
